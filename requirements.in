@@ -1,0 +1,17 @@
+furo
+GitPython
+myst-nb
+sphinx
+sphinx-click
+sphinx-copybutton
+sphinx-design
+sphinx-issues
+sphinx-panels
+sphinx-prompt
+sphinx-tabs
+sphinx-tags
+sphinxcontrib-napoleon
+sphinxcontrib-mermaid
+sphinxcontrib-video
+sphinxcontrib-youtube
+sphinxext-remoteliteralinclude
