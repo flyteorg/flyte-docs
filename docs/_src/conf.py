@@ -76,6 +76,8 @@ source_suffix = {
     ".md": "myst-nb",
 }
 
+# NOTE: extlinks only work in rst files, not md files
+# for external links for md files, see myst_url_schemes below
 extlinks = {
     "propeller": ("https://github.com/flyteorg/flytepropeller/tree/master/%s",
                   ""),
@@ -84,7 +86,7 @@ extlinks = {
     "plugins": ("https://github.com/flyteorg/flyteplugins/tree/v0.1.4/%s", ""),
     "idl": ("https://github.com/flyteorg/flyteidl/tree/v0.14.1/%s", ""),
     "admin": ("https://github.com/flyteorg/flyteadmin/tree/master/%s", ""),
-    "cookbook": ("https://flytecookbook.readthedocs.io/en/latest/", None),
+    "cookbook": ("https://flytecookbook.readthedocs.io/en/latest/", None)
 }
 
 autosummary_generate = True
@@ -263,6 +265,7 @@ myst_substitutions = conrefs.myst_substitutions
 # Define external links
 myst_url_schemes = myst_url_schemes.myst_url_schemes
 
+
 # auto-generate slugs for header anchors to specified header depth
 myst_heading_anchors = 3
 
@@ -302,15 +305,13 @@ PROTO_REF_REPLACE = r"\1/protos/docs"
 # These patterns are used to replace values in source files that are imported
 # from other repos.
 REPLACE_PATTERNS = {
-    r"<flyte:deployment/index>": r"</deployment/index>",
     r"<flytectl:index>": r"</flytectl/overview>",
     INTERSPHINX_REFS_PATTERN: INTERSPHINX_REFS_REPLACE,
     r"<protos/docs/core/core:taskmetadata>": r"<ref_flyteidl.core.TaskMetadata>",
     r"<protos/docs/core/core:tasktemplate>": r"<ref_flyteidl.core.TaskTemplate>",
     r"<deploy-sandbox-local>": r"<deployment-deployment-sandbox>",
-    r"<deployment/configuration/general:configurable resource types>": r"<deployment-configuration-general>",
+    # r"<deployment/configuration/general:configurable resource types>": r"<deployment-configuration-general>",
     r"<_tags/DistributedComputing>": r"</_tags/DistributedComputing>",
-    r"{ref}`bioinformatics <bioinformatics>`": r"bioinformatics",
     PROTO_REF_PATTERN: PROTO_REF_REPLACE,
     r"/protos/docs/service/index": r"/protos/docs/service/service",
 }

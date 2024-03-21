@@ -36,7 +36,7 @@ A workflow's body executes at registration time, during the workflow's registrat
 Registration involves uploading the packaged (serialized) code to the Flyte backend,
 enabling the workflow to be triggered.
 
-For more information, see the {std:ref}`registration documentation <flyte:divedeep-registration>`.
+For more information, see the {ref}`registration documentation <divedeep-registration>`.
 
 To begin, import {py:func}`~flytekit.task` and {py:func}`~flytekit.workflow` from the flytekit library.
 

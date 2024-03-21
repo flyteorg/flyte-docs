@@ -32,7 +32,7 @@ with configuration.
 .. note::
 
    The Flyte single container sandbox is also used by the team to run continuous integration tests and used by the
-   :ref:`cookbook:userguide`, :ref:`cookbook:tutorials` and :ref:`cookbook:integrations` documentation.
+   :ref:`userguide`, :ref:`tutorials` and :ref:`integrations` documentation.
 
 Requirements
 ============
@@ -106,9 +106,9 @@ such as workflow executions. The default values are enough to let you connect an
    will create a config file at `~/.flyte/config.yaml`.
 
    Learn more about the configuration settings in the
-   {ref}`Deployment Guide <flyte:flyteadmin-config-specification>`
+   {ref}`Deployment Guide <flyteadmin-config-specification>`
 
 
 
-Now that you have the sandbox cluster running, you can now go to the :ref:`User Guide <cookbook:userguide>` or
-:ref:`Tutorials <cookbook:tutorials>` to run tasks and workflows written in ``flytekit``, the Python SDK for Flyte.
+Now that you have the sandbox cluster running, you can now go to the :ref:`User Guide <userguide>` or
+:ref:`Tutorials <tutorials>` to run tasks and workflows written in ``flytekit``, the Python SDK for Flyte.

@@ -156,10 +156,10 @@ def downstream_workflow(
 
 ```{important}
 Prefer other data processing frameworks? Flyte ships with
-[Polars](https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-polars),
+[Polars](flytekit-plugins:flytekit-polars),
 {ref}`Dask <plugins-dask-k8s>`, {ref}`Modin <modin-integration>`, {ref}`Spark <plugins-spark-k8s>`,
-[Vaex](https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-vaex),
-and [DBT](https://github.com/flyteorg/flytekit/tree/master/plugins/flytekit-dbt)
+[Vaex](flytekit-plugins:flytekit-vaex),
+and [DBT](flytekit-plugins:flytekit-dbt)
 integrations.
 
 For database connectors, Flyte provides first-party support for {ref}`AWS Athena <aws-athena>`,

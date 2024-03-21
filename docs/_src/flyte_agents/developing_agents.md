@@ -15,7 +15,7 @@ If you need to create a new type of task, we recommend creating a new agent to r
 
 ```{note}
 
-We strongly encourage you to contribute your agent to the Flyte community. To do so, follow the steps in "[Contributing to Flyte](https://docs.flyte.org/en/latest/community/contribute.html)" to add your agent to [Flytekit](https://github.com/flyteorg/flytekit/tree/master/plugins) and [create an example](https://docs.flyte.org/en/latest/flytesnacks/contribute.html) of your agent for the [Integrations](https://docs.flyte.org/en/latest/flytesnacks/integrations.html) documentation. If you have any questions, reach out to us on [Slack](https://docs.flyte.org/en/latest/community/contribute.html#).
+We strongly encourage you to contribute your agent to the Flyte community. To do so, follow the steps in {doc}`"Contributing to Flyte" </community/contributing/contributing_to_flyte_oss>` to add your agent to [Flytekit](https://github.com/flyteorg/flytekit/tree/master/plugins) and {doc}`create an example</community/contributing/contributing_example_code>` of your agent for the {doc}`Integrations</integrations/index>` documentation. If you have any questions, reach out to us on [Slack](https://slack.flyte.org/).
 
 ```
 
@@ -35,7 +35,7 @@ While agents can be written in any programming language, we currently only suppo
 
 #### Async agent interface specification
 
-To create a new async agent, extend the [`AsyncAgentBase`](https://github.com/flyteorg/flytekit/blob/master/flytekit/extend/backend/base_agent.py#L127) class and implement `create`, `get`, and `delete` methods. These methods must be idempotent.
+To create a new async agent, extend the [`AsyncAgentBase`](flytekit-repo:blob/master/flytekit/extend/backend/base_agent.py#L127) class and implement `create`, `get`, and `delete` methods. These methods must be idempotent.
 
 - `create`: This method is used to initiate a new job. Users have the flexibility to use gRPC, REST, or an SDK to create a job.
 - `get`: This method retrieves the job resource (jobID or output literal) associated with the task, such as a BigQuery job ID or Databricks task ID.
@@ -78,11 +78,11 @@ class BigQueryAgent(AsyncAgentBase):
 AgentRegistry.register(BigQueryAgent())
 ```
 
-For an example implementation, see the [BigQuery agent](https://github.com/flyteorg/flytekit/blob/master/plugins/flytekit-bigquery/flytekitplugins/bigquery/agent.py#L43).
+For an example implementation, see the [BigQuery agent](flytekit-repo:blob/master/plugins/flytekit-bigquery/flytekitplugins/bigquery/agent.py#L43).
 
 #### Sync agent interface specification
 
-To create a new sync agent, extend the [`SyncAgentBase`](https://github.com/flyteorg/flytekit/blob/master/flytekit/extend/backend/base_agent.py#L107) class and implement a `do` method. This method must be idempotent.
+To create a new sync agent, extend the [`SyncAgentBase`](flytekit-repo:blob/master/flytekit/extend/backend/base_agent.py#L107) class and implement a `do` method. This method must be idempotent.
 
 - `do`: This method is used to execute the synchronous task, and the worker in Flyte will be blocked until the method returns.
 
@@ -132,7 +132,7 @@ For flytekit versions `>v1.10.2`, use `pyflyte serve agent`.
 
 ### 4. Update FlyteAgent
 
-1. Update the FlyteAgent deployment's [image](https://github.com/flyteorg/flyte/blob/master/charts/flyteagent/templates/agent/deployment.yaml#L35)
+1. Update the FlyteAgent deployment's [image](flyte-repo:blob/master/charts/flyteagent/templates/agent/deployment.yaml#L35)
 2. Update the FlytePropeller configmap.
 
 ```YAML

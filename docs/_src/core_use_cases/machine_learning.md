@@ -95,10 +95,10 @@ There are many ways to extend your workloads:
 * - **🗺 Horizontal Scaling**
   - With constructs like {py:func}`~flytekit.dynamic` workflows and
     {py:func}`~flytekit.map_task`s, implement gridsearch, random search,
-    and even [bayesian optimization](https://github.com/flyteorg/flytekit-python-template/tree/main/bayesian-optimization/%7B%7Bcookiecutter.project_name%7D%7D).
+    and even [bayesian optimization](flytekit-python-template:tree/main/bayesian-optimization/%7B%7Bcookiecutter.project_name%7D%7D).
 * - **🔧 Specialized Tuning Libraries**
   - Use the {ref}`Ray Integration <kube-ray-op>` and leverage tools like
-    [Ray Tune](https://docs.ray.io/en/latest/tune/index.html) for hyperparameter
+    [Ray Tune](ray-docs:en/latest/tune/index.html) for hyperparameter
     optimization, all orchestrated by Flyte as ephemerally-provisioned Ray clusters.
 * - **📦 Ephemeral Cluster Resources**
   - Use the {ref}`MPI Operator <kf-mpi-op>`, {ref}`Sagemaker <aws-sagemaker>`,

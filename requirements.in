@@ -10,8 +10,8 @@ sphinx-panels
 sphinx-prompt
 sphinx-tabs
 sphinx-tags
-sphinxcontrib-napoleon
 sphinxcontrib-mermaid
+sphinxcontrib-napoleon
 sphinxcontrib-video
 sphinxcontrib-youtube
 sphinxext-remoteliteralinclude

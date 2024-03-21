@@ -446,7 +446,7 @@ executing them.
 :class: with-shadow
 :::
 
-However, at the end of execution, you'll be able to use {ref}`Flyte Decks <deck>`
+However, at the end of execution, you'll be able to use {ref}`Flyte Decks <decks>`
 to see a list of all the tasks and subworkflows that were executed within the
 eager workflow:
 

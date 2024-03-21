@@ -148,7 +148,7 @@ Core use cases <core_use_cases/index>
 :name: guides
 :hidden:
 
-User Guide <user_guide/index>
+User guide <user_guide/index>
 Tutorials <tutorials/index>
 Integrations <integrations/index>
 Deprecated integrations <deprecated_integrations/index>

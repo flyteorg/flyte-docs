@@ -47,7 +47,7 @@ Flyte projects initialized with `pyflyte init` contain a `workflows` directory, 
 The workflow code may contain ImageSpec configurations, and one or more task and workflow functions, decorated with the `@task` and `@workflow` decorators, respectively.
 
 ```{note}
-The workflow directory also contains an `__init__.py` file to indicate that the workflow code is part of a Python package. For more information, see the [Python documentation](https://docs.python.org/3/reference/import.html#regular-packages).
+The workflow directory also contains an `__init__.py` file to indicate that the workflow code is part of a Python package. For more information, see the [Python documentation](python-docs:3/reference/import.html#regular-packages).
 ```
 
 ### ImageSpec
@@ -81,7 +81,7 @@ The `@task` decorator indicates a Python function that defines a task.
 
 * A task is a Python function that takes some inputs and produces an output.
 * Tasks are assembled into workflows.
-* When deployed to a Flyte cluster, each task runs in its own [Kubernetes Pod](https://kubernetes.io/docs/concepts/workloads/pods/), where Flyte orchestrates what task runs at what time in the context of a workflow.
+* When deployed to a Flyte cluster, each task runs in its own [Kubernetes Pod](kubernetes-docs:concepts/workloads/pods/), where Flyte orchestrates what task runs at what time in the context of a workflow.
 
 ```python
 @task()
@@ -94,7 +94,7 @@ def say_hello(name: str) -> str:
 The `@workflow` decorator indicates a function-esque construct that defines a workflow.
 
 * Workflows specify the flow of data between tasks, and the dependencies between tasks.
-* A workflow appears to be a Python function but is actually a [domain-specific language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) that only supports a subset of Python syntax and semantics.
+* A workflow appears to be a Python function but is actually a [domain-specific language (DSL)](wikipedia:Domain-specific_language) that only supports a subset of Python syntax and semantics.
 * When deployed to a Flyte cluster, the workflow function is "compiled" to construct the directed acyclic graph (DAG) of tasks, defining the order of execution of task pods and the data flow dependencies between them.
 
 ```python

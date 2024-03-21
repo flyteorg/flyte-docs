@@ -66,7 +66,7 @@ Types
 
 It is impossible to define the unit of execution of a task in the same way for all tasks. Hence, Flyte allows for different task
 types in the system. Flyte has a set of defined, battle-tested task types. It allows for a flexible model to
-:std:ref:`define new types <cookbook:plugins_extend>`.
+:std:ref:`define new types <plugins_extend>`.
 
 Inherent Features
 -----------------
